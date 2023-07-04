@@ -31,12 +31,9 @@ public class GestorCitaMedicaImpl implements IGestorCitaMedica {
 		Paciente pacientebd = this.pacienteService.buscarPorCedulaPaciente(cedulaPaciente);
 
 		CitaMedica citaMedica = new CitaMedica();
-		citaMedica.setDiagnotico("fractura");
 		citaMedica.setFechaCita(fechaCita);
-		citaMedica.setFechaProximaCita(LocalDateTime.of(2023, 8, 10, 10, 0));
 		citaMedica.setLugarCita(lugarCita);
 		citaMedica.setNumeroCita(numeroCita);
-		citaMedica.setReceta("Paracetamol 600mg");
 		citaMedica.setValorCita(valorCita);
 		citaMedica.setDoctor(doctorbd);
 		citaMedica.setPaciente(pacientebd);
